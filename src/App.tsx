@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import type * as React from 'react';
 
 type Shelf = 'want' | 'reading' | 'read';
 type Book = { id:string; title:string; author:string; year?:number; cover?:number; description?:string; pages?:number; tags?:string[] };
