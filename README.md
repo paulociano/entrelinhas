@@ -1,15 +1,48 @@
 # Entrelinhas
 
-Biblioteca digital pessoal para descobrir livros, organizar estantes e registrar leituras.
+Biblioteca pessoal com catálogo de livros, pesquisa na Open Library e estantes locais.
 
-## Código-fonte
+## Executar
 
-O projeto existente foi desenvolvido com React, TypeScript e Vite, com integração à Open Library. A versão atual está em processo de migração para este repositório.
+Requisitos: Node.js 20+ e npm.
+
+```bash
+npm install
+npm run dev
+```
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Funcionalidades
+
+- Descoberta editorial com coleções temáticas e pesquisa de livros/autores
+- Detalhes e sinopses obtidos da Open Library
+- Estantes: Quero ler, Lendo e Lido
+- Avaliações e notas privadas armazenadas no navegador
+- Interface acessível, responsiva e suporte a movimento reduzido
+- Tratamento explícito de erros de rede e ausência de capas
+
+## Fonte de dados
+
+A aplicação utiliza a API pública [Open Library](https://openlibrary.org/developers/api) e as capas de [covers.openlibrary.org](https://openlibrary.org/dev/docs/api/covers). Não há integração oficial com Goodreads ou Skoob.
+
+## Privacidade
+
+Os dados pessoais ficam somente no localStorage deste navegador. Não há conta, backend ou sincronização entre dispositivos. Não envie informações sensíveis para o campo de notas.
 
 ## Identidade
 
-Marca Entrelinhas, com logotipo minimalista e tema editorial verde-escuro, creme e cobre.
+Paleta verde-floresta, cobre e creme. SVGs da marca em `public/`.
 
-## Estado
+## Implantação
 
-Repositório oficial do projeto. A importação do código-fonte e dos assets da aplicação está pendente; este README não significa que o aplicativo já esteja publicado ou executável a partir do GitHub.
+Para hospedagem estática, usar comando `npm run build` e diretório de saída `dist`. Em Vercel/Netlify selecionar framework Vite. O projeto não depende de segredos no cliente.
+
+## Verificação
+
+O workflow `.github/workflows/ci.yml` executa `npm install` e `npm run build` em cada push/PR. A primeira execução no GitHub é a referência de sucesso do build.
