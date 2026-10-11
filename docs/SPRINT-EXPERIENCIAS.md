@@ -81,3 +81,12 @@ Integração não oficial com Skoob/Goodreads, resumos de livros protegidos, sin
 - [x] Mock de respostas da Open Library para execução reproduzível e sem tráfego real.
 - [ ] Confirmar a primeira execução do workflow Browser journeys em GitHub Actions.
 - [ ] QA manual em dispositivos reais e testes de acessibilidade mais abrangentes.
+
+## Preparação para sincronização (portabilidade de dados)
+- [x] Exportar biblioteca, diário e preferências em backup JSON versionado.
+- [x] Importar backup mediante validação de formato, limite de 5 MB e confirmação do usuário.
+- [x] Mesclar a biblioteca mantendo os registros locais como precedência para IDs repetidos.
+- [x] Mesclar registros do diário por ID sem sobrescrever registros já existentes.
+- [x] Não anunciar como sincronização: backups ainda são manuais e locais.
+- [ ] Incluir auditoria de UI/browser da restauração e testes automatizados desse fluxo.
+- [ ] Autenticação, armazenamento remoto, tratamento de conflitos e exclusão de conta serão entregues apenas na fase cloud com backend configurado.
