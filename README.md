@@ -46,3 +46,7 @@ Para hospedagem estática, usar comando `npm run build` e diretório de saída `
 ## Verificação
 
 O workflow `.github/workflows/ci.yml` executa `npm install` e `npm run build` em cada push/PR. A primeira execução no GitHub é a referência de sucesso do build.
+
+## Sprint de experiências literárias
+
+Atmosferas, DNA literário heurístico, diário de registros, retrospectiva anual e companheiro local de reflexão. Veja [critérios de aceite](docs/SPRINT-EXPERIENCIAS.md).
