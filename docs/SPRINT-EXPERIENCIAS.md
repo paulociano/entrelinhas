@@ -44,3 +44,12 @@ Adoção do laboratório, conversão de atmosfera→livro salvo, registros de di
 
 ## Não objetivos
 Integração não oficial com Skoob/Goodreads, resumos de livros protegidos, sincronização remota ou IA generativa simulada.
+
+## Continuação: Diário de Leitura 2.0
+- [x] Edição de um registro existente sem perder data e identificador.
+- [x] Filtro por livro e ordenação cronológica reversível.
+- [x] Exportação JSON dos registros pessoais.
+- [x] Importação JSON validada (até 2 MB / 5.000 registros), sem sobrescrever IDs existentes.
+- [x] Confirmação antes de excluir registros.
+- [ ] Testes automatizados de interface, importação e backup ainda devem ser adicionados.
+- [ ] Sincronização entre navegadores permanece fora do escopo.
