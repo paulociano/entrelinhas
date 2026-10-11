@@ -64,3 +64,11 @@ Integração não oficial com Skoob/Goodreads, resumos de livros protegidos, sin
 - [ ] Validar pertinência editorial das recomendações e precisão dos assuntos com leitores reais.
 - [ ] Testes automatizados de UI, integração e performance permanecem pendentes.
 - [ ] Recomendações são heurísticas, não usam inteligência artificial generativa.
+
+## Continuação: qualidade do catálogo e navegação (2026-10-10)
+- [x] Preservar até doze assuntos por obra para enriquecer afinidades literárias.
+- [x] Filtrar resultados de busca para chaves válidas de obras (`/works/`).
+- [x] Repetir buscas com erro mesmo quando o texto não mudou.
+- [x] Mostrar erro sem exibir resultados desatualizados.
+- [x] Navegação móvel: botão com `aria-controls`, estado `aria-expanded` e fechar com Escape.
+- [ ] Executar testes manuais reais em navegador desktop e mobile; CI de build não substitui esses testes.
