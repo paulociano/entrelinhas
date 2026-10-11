@@ -72,3 +72,12 @@ Integração não oficial com Skoob/Goodreads, resumos de livros protegidos, sin
 - [x] Mostrar erro sem exibir resultados desatualizados.
 - [x] Navegação móvel: botão com `aria-controls`, estado `aria-expanded` e fechar com Escape.
 - [ ] Executar testes manuais reais em navegador desktop e mobile; CI de build não substitui esses testes.
+
+## E2E de jornadas principais
+- [x] Playwright/Chromium configurado sobre a build de produção do Vite.
+- [x] Cenário de busca, adição à estante, registro e persistência do progresso.
+- [x] Cenário de diário: adicionar, editar e exportar anotação.
+- [x] Cenário de navegação móvel e fechamento do menu por Escape.
+- [x] Mock de respostas da Open Library para execução reproduzível e sem tráfego real.
+- [ ] Confirmar a primeira execução do workflow Browser journeys em GitHub Actions.
+- [ ] QA manual em dispositivos reais e testes de acessibilidade mais abrangentes.
