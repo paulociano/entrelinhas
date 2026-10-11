@@ -34,7 +34,7 @@ test('diário permite salvar, editar, filtrar e exportar',async ({page})=>{
  await page.getByRole('button',{name:'Salvar na biblioteca'}).click();
  await page.getByRole('navigation',{name:'Navegação principal'}).getByRole('button',{name:'Experiências'}).click();
  await page.getByRole('tab',{name:'Diário'}).click();
- await page.getByLabel('Livro',{exact:true}).selectOption('/works/OL123W');
+ await page.locator('.lab-field select').first().selectOption('/works/OL123W');
  await page.getByLabel('Seu registro').fill('Primeira impressão.');
  await page.getByRole('button',{name:'Guardar memória'}).click();
  await expect(page.getByText('Primeira impressão.')).toBeVisible();
