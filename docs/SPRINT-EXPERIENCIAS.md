@@ -53,3 +53,14 @@ Integração não oficial com Skoob/Goodreads, resumos de livros protegidos, sin
 - [x] Confirmação antes de excluir registros.
 - [ ] Testes automatizados de interface, importação e backup ainda devem ser adicionados.
 - [ ] Sincronização entre navegadores permanece fora do escopo.
+
+## DNA Literário 2.0: critérios de aceite
+- [x] Recuperar preferências do navegador e permitir selecionar: favoritos, concluídos ou toda a estante.
+- [x] Usar assuntos bibliográficos dos livros locais como sinal de afinidade, sem transmissão das avaliações.
+- [x] Buscar candidatos reais na Open Library e omitir os livros já salvos.
+- [x] Mostrar justificativa de cada recomendação baseada na coincidência de assunto quando disponível.
+- [x] Permitir remover e restaurar assuntos do cálculo.
+- [x] Mostrar estados de carregamento, erro e falta de dados, com interface responsiva.
+- [ ] Validar pertinência editorial das recomendações e precisão dos assuntos com leitores reais.
+- [ ] Testes automatizados de UI, integração e performance permanecem pendentes.
+- [ ] Recomendações são heurísticas, não usam inteligência artificial generativa.
